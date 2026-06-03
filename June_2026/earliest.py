@@ -11,7 +11,7 @@ if min_land_start_time < min_water_start_time:
     min_start += waterDuration[landStartTime.index(min_land_start_time)] 
 else:
     min_start = waterDuration[waterStartTime.index(min_water_start_time)] + min_water_start_time
-    min_start += landDuration[waterStartTime.index(min_water_start_time)]
+    min_start += landDuration[landStartTime.index(min_land_start_time)]
 
 
 print(min_start)
